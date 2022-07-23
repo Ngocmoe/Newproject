@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diem hoc</title>
+</head>
+<body>
+    <script>
+        let inputDiemHoa = prompt('Nhap diem Hoa hoc: ');
+        let inputDiemLy = prompt('Nhap diem Vat ly: ');
+        let inputDiemSInh = prompt('Nhap diem Sinh hoc: ');
+
+        let DiemHoa = parseInt(inputDiemHoa);
+        let DiemLy = parseInt(inputDiemLy);
+        let DiemSinh = parseInt(inputDiemSInh);
+
+        let AVR=(DiemHoa+DiemLy+DiemSinh)/3;
+        let SUM=DiemHoa+DiemLy+DiemSinh;
+
+        document.write('Tong diem la: '+SUM);
+        document.write('<br/>');
+        document.write('Diem trung binh la: '+AVR);
+    </script>
+</body>
+</html>
