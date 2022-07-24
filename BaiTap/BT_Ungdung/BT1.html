@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyen doi tien te</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+        table {
+            font-size: large;
+            margin: auto;
+        }
+
+        td {
+            padding: 1rem 3rem;
+        }
+
+        button {
+            background-color: rgb(229, 153, 245);
+            border-color: antiquewhite;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            padding: 0 20px;
+        }
+        select {
+            padding: 0 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CURRENCY CONVERTER</h1>
+    <form action="/convert">
+        <table style="width: auto;">
+            <thead>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+                <th> </th>
+            </thead>
+            <tbody>
+                <td><input id="inputtien" placeholder="Input here"></td>
+                <td><select id="FromCurrency">
+                    <option value="1" selected="selected">VietNam</option>
+                    <option value="2">USA</option>
+                    <option value="3">JPY</option>
+                    </select>
+                </td>
+                <td><select id="ToCurrency">
+                    <option value="1" selected="selected">USA</option>
+                    <option value="2">VietNam</option>
+                    <option value="3">JPY</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="submit">Convert</button>
+                </td>
+
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
